@@ -19,6 +19,10 @@ const Controller = {
         View.createTemplate(data)
     },
 
+    init(){
+        this.loadedHandler = this.loadedHandler.bind(this)
+    },
+
     setEvents(){
         document.addEventListener('DOMContentLoaded', this.loadedHandler.bind(this))
     },

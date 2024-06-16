@@ -1,5 +1,5 @@
-import {dataKey} from "./constant";
-import data from "./data";
+import {dataKey} from "./constant.js";
+import data from "./data.js";
 
 const Model = {
     checkData (){
