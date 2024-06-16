@@ -13,11 +13,11 @@ const Controller = {
     removeHandler (event)  {
         const target = event.target.closest('li');
         const postId = Number(target.getAttribute('data-id'));
-        const data = getData();
+        const data = Model.getData();
         const indexItem = data.findIndex(item =>
             item.id === postId);
         data.splice(indexItem, 1);
-        localStorage.setItem(dataKey, JSON.stringify(data))
+        localStorage.setItem(data, JSON.stringify(data))
         target.remove()
     },
 
