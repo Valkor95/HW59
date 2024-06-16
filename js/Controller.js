@@ -21,6 +21,8 @@ const Controller = {
 
     init(){
         this.loadedHandler = this.loadedHandler.bind(this)
+
+        this.setEvents()
     },
 
     setEvents(){
