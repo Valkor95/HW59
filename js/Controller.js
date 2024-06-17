@@ -4,6 +4,7 @@ import View from "./View.js";
 const Controller = {
 
     divContainer: document.querySelector('#app'),
+
     loadedHandler () {
         Model.checkData();
         const data = Model.getData();
